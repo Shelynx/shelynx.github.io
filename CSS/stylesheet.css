@@ -5,7 +5,7 @@ body {
 
 .container-fluid {
   padding: 3% 7%;
-  padding-bottom: 10%;
+  padding-bottom: 5%;
 }
 
 /* Section */
@@ -64,17 +64,19 @@ body {
   font-stretch: semi-expanded;
 }
 
-.summary {
+/* .summary {
   font-family: 'niveau-grotesk', sans-serif;
   font-size: 1.3rem;
   padding-right: 80px;
 }
+ */
 
 .worry {
   color: #b1a238;
   font-stretch: ultra-expanded;
   /* font-size: 1.4rem; */
   font-weight: 400;
+  padding-bottom: 1rem;
 }
 
 /** BUTTON **/
@@ -112,7 +114,12 @@ body {
   border-width: 2.5px;
   padding: 5px 5px;
   color: #b1a238;
+  background-image: url(/image/jennifer-cropped.png) no-repeat;
 }
+.rounded-circle:hover{
+opacity: 0.5;
+}
+
 
 /* circle */
 .shape {
@@ -141,30 +148,65 @@ circle {
   z-index: 1; */
 }
 
-.text-col {
-  color: #000000;
-  position: sticky;
-  font-family: 'niveau-grotesk', sans-serif;
-  text-align: left;
-  font-size: 4.5rem;
-  font-weight: 500;
-  line-height: 6rem;
+
+
+
+@media  screen and (min-width: 600px) {
+  /*MOBILE*/
+  .text-col {
+    color: #e60d85;
+    position: sticky;
+    font-family: 'niveau-grotesk', sans-serif;
+    text-align: left;
+    font-size: 4.5rem;
+    font-weight: 900;
+    line-height: 6rem;
+  }
+
+  .big-num {
+    color: #92669f;
+    font-family: 'niveau-grotesk', sans-serif;
+    font-size: 10rem;
+    font-weight: 500;
+    top: 25px;
+  }
 }
 
-.big-num {
-  color: #92669f;
-  font-family: 'niveau-grotesk', sans-serif;
-  font-size: 10rem;
-  font-weight: 500;
-  top: 25px;
+
+
+@media only screen and (min-width: 1200px) {
+  /*DESKTOP*/
+  .worry{
+    display: none;
+  }
+  .text-col {
+    color: #000000;
+    position: sticky;
+    font-family: 'niveau-grotesk', sans-serif;
+    text-align: left;
+    font-size: 4.5rem;
+    font-weight: 500;
+    line-height: 6rem;
+  }
+
+  .big-num {
+    color: #92669f;
+    font-family: 'niveau-grotesk', sans-serif;
+    font-size: 10rem;
+    font-weight: 500;
+    top: 25px;
+  }
+ 
+ 
 }
+
 
 span {
   font-family: 'chennai', sans-serif;
   vertical-align: top;
 }
 
-.right-col{
+.right-col {
   padding-left: 0;
 }
 
@@ -212,13 +254,13 @@ span {
   opacity: 1;
 }
 
-.footer>p{
+.footer>p {
   margin-left: 25px;
   margin-right: 25px;
 }
 
-.link-recette{
-  color:#92669f;
+.link-recette {
+  color: #92669f;
 }
 
 
@@ -246,12 +288,13 @@ span {
   margin-bottom: 75px;
 }
 
-.section-skill-text-ex{
+.section-skill-text-ex {
   font-size: 1.3rem;
 }
 
 
-.lavender, .golden {
+.lavender,
+.golden {
   font-weight: 500;
   font-size: 1.5rem;
   font-stretch: expanded;
@@ -433,13 +476,14 @@ span {
   font-weight: lighter;
 }
 
-#error-index{
+#error-index {
 
   color: #0000;
   font-weight: 400;
   font-size: 1.5rem;
 }
-#error-index:hover{
+
+#error-index:hover {
   color: #92669f;
   text-decoration: none;
 }
