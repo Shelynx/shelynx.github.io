@@ -114,10 +114,15 @@ body {
   border-width: 2.5px;
   padding: 5px 5px;
   color: #b1a238;
-  background-image: url(/image/jennifer-cropped.png) no-repeat;
 }
-.rounded-circle:hover{
-opacity: 0.5;
+
+
+.MyImage{
+  content: url(/image/jennifer-cropped.png);
+}
+
+.MyImage:hover{
+  opacity: 0.5;
 }
 
 
@@ -151,24 +156,33 @@ circle {
 
 
 
-@media  screen and (min-width: 600px) {
+
+@media screen and (min-width: 600px) {
   /*MOBILE*/
-  .text-col {
+
+
+  .text-year {
     color: #e60d85;
     position: sticky;
     font-family: 'niveau-grotesk', sans-serif;
     text-align: left;
-    font-size: 4.5rem;
+    font-size: 2.8rem;
     font-weight: 900;
-    line-height: 6rem;
+    line-height: 3rem;
+    overflow: hidden;
   }
 
   .big-num {
     color: #92669f;
     font-family: 'niveau-grotesk', sans-serif;
-    font-size: 10rem;
+    font-size: 8rem;
     font-weight: 500;
     top: 25px;
+    justify-self: start;
+    display: flex;
+    float: left;
+    line-height: 75%;
+    margin-bottom:0px;
   }
 }
 
@@ -179,27 +193,30 @@ circle {
   .worry{
     display: none;
   }
-  .text-col {
+  .text-year {
     color: #000000;
     position: sticky;
     font-family: 'niveau-grotesk', sans-serif;
     text-align: left;
-    font-size: 4.5rem;
+    font-size: 4rem;
     font-weight: 500;
     line-height: 6rem;
+    overflow: hidden;
   }
 
   .big-num {
     color: #92669f;
     font-family: 'niveau-grotesk', sans-serif;
-    font-size: 10rem;
+    font-size: 230px;
     font-weight: 500;
     top: 25px;
+    justify-self: start;
+    display: flex;
+    float: left;
+    line-height: 90%;
+   
   }
- 
- 
 }
-
 
 span {
   font-family: 'chennai', sans-serif;
@@ -217,7 +234,6 @@ span {
   font-weight: 500;
   line-height: 1.2;
   margin-bottom: 25px;
-
 }
 
 .right-col {
