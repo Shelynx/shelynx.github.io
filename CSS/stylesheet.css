@@ -302,6 +302,9 @@ span {
   font-weight: 500;
   font-size: 1.4rem;
   margin-bottom: 75px;
+  padding: 0px 180px;
+  word-break: keep-all;
+  text-align: justify;
 }
 
 .section-skill-text-ex {
@@ -356,7 +359,7 @@ span {
 }
 
 .intermediate {
-  margin-top: 50px;
+  margin-top: 40px;
 }
 
 .skills-row {
