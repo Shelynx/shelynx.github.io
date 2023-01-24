@@ -390,6 +390,9 @@ span {
   font-weight: 500;
   font-size: 1.4rem;
   margin-bottom: 75px;
+  padding: 0px 180px;
+  word-break: keep-all;
+  text-align: justify;
 }
 
 .interest-table {
@@ -400,7 +403,7 @@ span {
 }
 
 .interest-icon {
-  width: 40%;
+  width: 25%;
   color: #b1a238;
 }
 
